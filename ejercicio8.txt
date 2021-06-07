@@ -1,0 +1,30 @@
+Algoritmo ejercicio8
+	
+	Hacer
+		
+	Mostrar "Generador de multiplos de 5, seleccione S ó s para salir o cualquier otra tecla para generar"
+	Leer seleccion
+	meta = Falso
+	
+	Segun seleccion Hacer
+		"s":
+			Mostrar "Adios"
+			
+		"S":
+			Mostrar "Adios"
+			
+		De Otro Modo:
+			Hacer
+				numero = azar(1000000)
+				si numero%5 = 0
+					Mostrar numero
+					meta = Verdadero
+				SiNo
+					meta = Falso
+				FinSi
+			Hasta Que meta = Verdadero
+			
+	FinSegun
+	
+Hasta Que seleccion = "s" o seleccion = "S"
+FinAlgoritmo
